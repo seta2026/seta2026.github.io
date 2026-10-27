@@ -342,6 +342,8 @@ body {
 }
 
 .img1{
-    width: 500px;
-    height: 327px;
+    width: 100%;
+    max-width: 500px; /* 屏幕大时最大500px，防止图片太大 */
+    height: auto;     /* 高度自动，保证图片不变形 */
+    object-fit: contain;
 }
